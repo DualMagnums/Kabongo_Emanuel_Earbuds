@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device width not a larger canvas that is shrunk down-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Q-Buds</title>
+    <!-- Link to reset or normalize before main.css
+    only choose one -->
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav>
+            <a href="index.html" class="logo"><img src="images/logo.svg" width="100px" alt="logo"></a>
+            <ul id="navigation">
+                <li class="menu selected">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#buds">Buds</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#specs">Specs</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="full-width-grid-con">
+        <div class="col-start-2 col-end-3">
+            <div class="content">
+                <img src="images/q_bud.png" alt="q-buds">
+
+                <div>
+                    <h3 id="buds">BUDS</h3>
+                    <ul>
+                        <li>
+                            <a><img src="images/bud1.jpg" alt="bud1"></a>
+                        </li>
+                        <li>
+                            <a><img src="images/bud2.jpg" alt="bud2"></a>
+                        </li>
+                        <li>
+                            <a><img src="images/bud3.jpg" alt="bud3"></a>
+                        </li>
+                        <li>
+                            <a><img src="images/bud4.jpg" alt="bud4"></a>
+                        </li>
+                    </ul>
+
+                    <h1><a href="index.html">BUY NOW</a></h1>
+                </div>
+
+
+
+                <h1 id="about">About The Q-Buds</h1>
+                <p>Q-Buds are here to usher in an innovative and brand new era of earbuds!</p>
+                <p>Up to 3x more Active Noise Cancellation. Transparent mode to hear your world.</p>
+                <p>All-new Adaptive Audio intelligently controls your environment's noise.</p>
+                <p>Touch controls cater to your media needs. And a single charge delivers 8 hours of battery life.</p>
+                </div>
+        </div>   
+        <div class="col-span-full">
+            <canvas id="explode-view"></canvas> 
+        </div>
+        <div class="col-start-2 col-end-3">
+            <div class="content">
+                <h1 id="specs">Specs</h1>
+                <p>
+                Q-H3 Chip
+                </p>
+
+                <p>
+                Transparency Mode<br>
+                Low-Noise Mode
+                </p>
+                <p>
+                Height: 31 mm (1.3 inches)<br>
+                Width: 21.9 mm (0.87 inch)<br>
+                Depth: 24.5 mm (0.95 inch)<br>
+                Weight: 5.4 grams (0.2 ounce)<br>
+                </p>
+
+                <p>
+                Bluetooth 5.3 wireless technology
+                </p>
+
+                <p>
+                Touch Controls<br>
+                Skin Detect sensors
+                </p>
+
+                <h1>Contents revealed</h1>
+
+                <p>
+                    Explore the specs and features of the Q-Buds further through our X-Ray slider
+                </p>
+                
+            </div>
+        </div>
+        
+        <div class="col-span-full">
+            <div id="mobile-tablet-view">
+                <img src="images/earbud-x-ray.jpg" alt="X ray view of ear bud">
+                <img src="images/earbud.jpg" alt="Regular view of ear bud">
+            </div>
+            <div id="outerShell">
+                <div id="imageCon">
+                <div class="slideImage image-right"></div> <!-- wire version -->
+                <div class="slideImage image-left"></div> <!-- actual earbuds -->
+                <div class="slideImage image-drag"></div> <!-- div to create black bar -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footnote">
+            <div>
+                <p>&copy; 2023 BY KALONGA EMANUEL KABONGO | ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
