@@ -1,0 +1,307 @@
+/*fonts*/
+@font-face {
+  font-family: 'gothammedium';
+  src: url('../fonts/gothammedium-webfont.woff2') format('woff2'),
+       url('../fonts/gothammedium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+font-family: 'audiowide-regular-webfont';
+src: url('../fonts/audiowide-regular-webfont.eot');
+src: url('../fonts/audiowide-regular-webfont.woff') format('woff'), url('../fonts/audiowide-regular-webfont.ttf') format('truetype'), url('../fonts/audiowide-regular-webfont.svg') format('svg');
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'gothammedium';
+  font-size: 18px;
+}
+
+body div h1 {
+  color: #b4893a;
+  font-size: 35px;
+  margin-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body div p {
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2, p {
+  margin-bottom: 30px;
+}
+
+
+#outerShell {
+  display: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+header {
+	margin-top: 50px;
+	max-height: 60px;
+	padding: 0;
+	width: auto;
+}
+header nav {
+	margin: 0 auto;
+	max-width: 940px;
+	min-height: 60px;
+	padding: 0 10px;
+}
+header nav a.logo {
+	display: block;
+	float: left;
+	height: 60px;
+	margin: 0 44px 0 0;
+	padding: 0;
+	width: 100px;
+}
+header nav a img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+header nav ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+header nav ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+header nav ul li a {
+	color: #000000;
+	display: block;
+	font-family: 'gothammedium';
+	font-size: 20px;
+	font-weight: 900;
+	line-height: 59px;
+	margin: 0;
+	min-height: 60px;
+	padding: 0 24px;
+ 	padding: 0 23px;
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
+}
+header nav ul li a:hover {
+	background: url("../images/selected.png") no-repeat scroll center top;
+}
+header nav ul li.selected a {
+	background: url("../images/selected.png") no-repeat scroll center top;
+
+}
+
+/** PICS **/
+
+div .content {
+  margin: 0 auto;
+	max-width: 1000px;
+	overflow: hidden;
+	padding: 0 10px;
+	position: relative;
+}
+
+div .content div h3 {
+	background-color: #000000;
+	color: #b4893a;
+	float: left;
+	font-family: 'gothammedium';
+	font-size: 29px;
+	font-weight: 800;
+	line-height: 23px;
+ 	margin: 102px 0 0;
+	min-height: 27px;
+	padding: 17px 0 10px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 940px;
+}
+
+div .content div ul {
+	display: inline-block;
+	list-style: none outside none;
+	margin: 0 0 -6px;
+	overflow: hidden;
+	padding: 0;
+	width: auto;
+}
+div .content div ul li:first-child {
+	padding: 0;
+}
+div .content div ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+div .content div ul li a {
+	display: block;
+	float: none;
+	height: 156px;
+	margin: 0;
+	padding: 0;
+	width: 235px;
+}
+div .content div ul li a img {
+	cursor: pointer;
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+div .content div ul li a img:hover {
+	filter: alpha(opacity=10);
+	opacity: 0.8;
+}
+
+div .content h1 a {
+  background-color: #b4893a;
+  color: #ffffff;
+  padding: 20px 20px 20px 20px ;
+}
+/** PICS **/
+
+#explode-view {
+  margin: auto;
+  width: 100%;
+}
+
+footer .footnote {
+	background-color: #b4893a;
+	margin: 100PX;
+	min-height: 84px;
+	overflow: hidden;
+	padding: 0;
+	width: auto;
+}
+footer .footnote div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 34px 0 0;
+	width: 960px;
+}
+footer .footnote div p {
+	color: #ffffff;
+	display: block;
+	font-family: 'gothammedium';
+	font-size: 15px;
+	font-weight: 500;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 940px;
+}
+
+@media screen and (max-width: 768px) {
+
+  header nav ul li a {
+    display: flex;
+    font-size: 15px;
+    position: relative;
+    margin-left: 8px;
+    margin-top: 90px;
+  }
+
+  body div .content img {
+    margin-top: 180px;
+  }
+
+  div .content div {
+    margin: 0 auto;
+    max-width: none;
+    overflow: hidden;
+    padding: 0% 0;
+    position: relative;
+    width: 95%;
+  }
+
+  div .content div h3 {
+		margin: 100px 0 0;
+		width: 100%;
+	}
+
+  div .content div ul li a {
+    position: relative;
+		border: solid #b4893a 3px;
+		margin: 10% 0;
+		width: 100%;
+	}
+
+  footer {
+    position: relative;
+		width: 100%;
+	}
+
+  footer .footnote div p {
+    text-align: center;
+    position: relative;
+		width: auto;
+	}
+
+  
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+  #mobile-tablet-view {
+    display: none;
+  }
+  #outerShell {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    border: solid 1px #666;
+  }
+  #imageCon {
+    position: relative;
+    max-width: 1200px;
+    height: 90vh;
+  }
+  .slideImage {
+    position: absolute; /*images are stacked in order via absolute*/
+    left: 0;
+    right: 0;
+    height: 90vh;
+  }
+  .image-right {
+    background: url(../images/earbud-x-ray.jpg) no-repeat;
+    background-size: cover;
+  }
+  .image-left {
+    background: url(../images/earbud.jpg) no-repeat;
+    width: 50%; /*start the image at the halfway point*/
+    background-size: cover;
+  }
+  .image-drag {
+    background-color: #b4893a;
+    left: 50%; /*match up with image left*/
+    width: 10px; /*orig 49*/
+    cursor: pointer;
+  }
+}
+
